@@ -3,7 +3,8 @@ enum ENUM_SDK_ERRORS
 {
     SDK_ERROR_NONE = 0,
     SDK_ERROR_INVALID_PARAMETER = 1,
-    SDK_ERROR_ENUM_OUT_OF_RANGE = 2
+    SDK_ERROR_ENUM_OUT_OF_RANGE = 2,
+    SDK_ERROR_UNINITIALIZED_CLASS_MEMBER = 3
 };
 
 class CErrorsHandler
@@ -54,6 +55,8 @@ string CErrorsHandler::GetErrorMessage()
             return "Invalid parameter";
         case SDK_ERROR_ENUM_OUT_OF_RANGE:
             return "Enum out of range";
+        case SDK_ERROR_UNINITIALIZED_CLASS_MEMBER:
+            return "Uninitialized class member";
         default:
             return "Unknown error";
     }

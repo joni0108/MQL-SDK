@@ -6,3 +6,4 @@ this module is what you need.
 */
 #include "mql/account.mqh"
 #include "mql/terminal.mqh"
+#include "mql/market.mqh"

@@ -51,3 +51,48 @@ enum ENUM_TERMINAL
     DATA_PATH = 11, // Terminal data path
     COMMON_DATA_PATH = 12, // Terminal common data path
 };
+
+// Symbol related
+enum ENUM_SYMBOL
+{
+    //Integer expected return value
+    DIGITS = 0, // Digits after decimal point
+    SPREAD = 1, // Spread in points
+    STOP_LEVEL = 2, // Stop level in points
+    FREEZE_LEVEL = 3, // Freeze level in points
+
+    // Boolean expected return value
+    SELECTED_SYMBOL = 4, // Selected symbol
+    VISIBLE_SYMBOL = 5, // Visible symbol
+
+    // Double expected return value
+    BID = 6, // Bid price - best sell offer
+    ASK = 7, // Ask price - best buy offer
+    POINT = 8, // Point value in the symbol currency
+    TICK_VALUE = 9, // Tick value in the deposit currency
+    TICK_SIZE = 10, // Tick size
+    VOLUME_MIN = 11, // Minimum volume
+    VOLUME_MAX = 12, // Maximum volume
+    VOLUME_STEP = 13, // Volume step
+    SWAP_LONG = 14, // Swap long
+    SWAP_SHORT = 15, // Swap short
+    MARGIN_INITIAL = 16, // Initial margin
+    MARGIN_MAINTENANCE = 17, // Maintenance margin
+
+    // String expected return value
+    CURRENCY_BASE = 18, // Base currency
+    CURRENCY_PROFIT = 19, // Profit currency
+    CURRENCY_MARGIN = 20, // Margin currency
+    DESCRIPTION = 21, // Symbol description
+    PATH_IN_TREE = 22, // Symbol path in the Market Watch tree
+};
+
+// Mixed
+enum ENUM_MIX
+{
+    PASS_HIGH = 0, // Pass high
+    PASS_LOW = 1, // Pass low
+    PASS_OPEN = 2, // Pass open
+    PASS_CLOSE = 3, // Pass close
+    PASS_ALL = 3, // Pass all
+};
