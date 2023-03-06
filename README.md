@@ -40,7 +40,7 @@ You can also include specific modules instead of the whole framework, for doing 
 1. Download or clone the SDK repository in your computer.
 2. If you have a Metatrader app already installed in your system, skip to the step **4**.
 3. Install the Metatrader 4 or 5 (or both) provided in the `softwares/metatraders` folder, or use your own.
-4. Go to the Metatrader data folder; if you used the own provided, he path are below in [default paths](#default-paths).
+4. Go to the Metatrader data folder; if you used the own provided, the path are below in [default paths](#default-paths).
 5. Copy and paste the `MQL-SDK` folder that is inside the `includes` folder into your `includes` folder in the metatrader data folder you navigated to.
 6. Copy and paste the files from the `libraries` folder of the SDK repository into the `libraries` folder of your metatrader data folder.
 7. Copy and paste the files from the `images` folder of the SDK repository into the `images` folder of your metatrader data folder.
@@ -72,10 +72,18 @@ Access the documentation files in MD format by clicking [here](docs/home.md)
 |   `mql`   |  `terminal`  | Import all terminal-related data and operations      |
 |   `mql`   |   `market`   | Import all market-related data and operations        |
 |   `mql`   |   `trade`    | Import all trade-related data and operations         |
-|   `mql`   |  `history`   | Import all trade history-related data and operations |
 |   `mql`   | `indicators` | Import all indicators-related data and operations    |
+
+### Under Development
+|   From    | Module Name  | Description                                          |
+| :-------: | :----------: | :--------------------------------------------------- |
 | `network` |  `sockets`   | Allow working with web sockets.
 | `api` |  `discord`   | Allow working with the discord API.
 | `api` |  `telegram`   | Allow working with the telegram API.
 | `api` | `newsapi`   | Allow working with the newsapi API of news providers.
 `api` | `googlesheets` | Allow working with the google sheets API.
+
+## TODO -> Before next updates
+- [ ] Finish the documentation of the SDK.
+- [ ] Add the errors handlers to the 'Trade' module.
+- [ ] Finish the `sockets` and `api` module.

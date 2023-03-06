@@ -96,3 +96,27 @@ enum ENUM_MIX
     PASS_CLOSE = 3, // Pass close
     PASS_ALL = 3, // Pass all
 };
+
+// Orders related
+enum ENUM_TRADE_GET
+{
+    // Integer expected return value
+
+};
+
+//TRADE TYPES
+#define MARKET_BUY 0
+#define MARKET_SELL 1
+#define BUY_LIMIT 2
+#define SELL_LIMIT 3
+#define BUY_STOP 4
+#define SELL_STOP 5
+
+//ORDER SELECTION
+#define BY_INDEX 0
+#define BY_TICKET 1
+#define POOL_MAIN 0
+#define POOL_HISTORY 1
+#define POOL_BOTH 2
+
+#define SYMBOL "SYMBOL"
