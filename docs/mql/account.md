@@ -4,7 +4,7 @@ This is a sub-module of the MQL module. It will allow you to import all account-
 ## Installation
 If you didn't imported all the SDK or the MQL module, you can import this module using:
 ```cpp
-#include <MQL-SDK/modules/mql/account.mql>
+#include <MQL-SDK/modules/mql/account.mqh>
 ```
 
 # Class CAccount

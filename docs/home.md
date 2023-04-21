@@ -1,33 +1,12 @@
-### Table of Contents
-- [Modules](#modules)
-  - [MQL](#mql)
-    - [Account](#account)
-    - [Terminal](#terminal)
-    - [Market](#market)
-    - [Trade](#trade)
-    - [Indicators](#indicators)
-
-
 # Modules
-## MQL
-This module will allow you to code your MQL4 & MQL5 projects just once using the defined classes and functions. It will also allow you to use the same code for both MQL4 & MQL5.
 
-### Account
-This module will allow you to import all account-related data and operations.
-You can access the documentation for this module [here](mql/account.md).
-
-### Terminal
-This module will allow you to import all terminal-related data and operations.
-You can access the documentation for this module [here](mql/terminal.md).
-
-### Market
-This module will allow you to import all market-related data and operations.
-You can access the documentation for this module [here](mql/market.md).
-
-### Trade
-This module will allow you to import all trade-related data and operations.
-You can access the documentation for this module [here](mql/trade.md).
-
-### Indicators
-This module will allow you to import all indicators-related data and operations.
-You can access the documentation for this module [here](mql/indicators.md).
+| Package   |             Module              | Import as                   | Description                                                                                                                |
+| :-------- | :-----------------------------: | :-------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| `MQL`     |                                 | modules/mql.mqh             | Allows you to code any EA in a single language and export it to both languages (MQL4 & MQL5).                              |
+| ->        |    [Account](mql/account.md)    | modules/mql/account.mqh     | Handle all the account-related information.                                                                                |
+| ->        |   [Terminal](mql/terminal.md)   | modules/mql/terminal.mqh    | Handle all the terminal-related information.                                                                               |
+| ->        |     [Market](mql/market.md)     | modules/mql/market.mqh      | Handle all the market-related information                                                                                  |
+| ->        |      [Trade](mql/trade.md)      | modules/mql/trade.mqh       | Send, Manage, and handle orders and positions                                                                              |
+| ->        | [Indicators](mql/indicators.md) | modules/mql/insdicators.mqh | Handle the indicators                                                                                                      |
+| `Network` |                                 | modules/network.mqh         | Allows you to make network-related operations like web-requests, working with sockets, and making communication with APIs. |
+| ->        |  [Sockets](network/sockets.md)  | modules/network/sockets.mqh | Handle server and client sockets                                                                                           |
