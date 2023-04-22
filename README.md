@@ -2,7 +2,7 @@
 ![](https://img.shields.io/github/license/trollpro0108-code/MQL-SDK)
 ![](https://img.shields.io/github/v/release/trollpro0108-code/MQL-SDK?include_prereleases&label=last%20release)
 ![](https://img.shields.io/github/repo-size/trollpro0108-code/MQL-SDK)
-![](https://img.shields.io/badge/Lnaguage-MQL4%20%26%20MQL5-green)
+![](https://img.shields.io/badge/Languages-MQL4%20%26%20MQL5-purple)
 ![](https://img.shields.io/github/issues-raw/trollpro0108-code/MQL-SDK)
 
 **What is MQL-SDK?**
