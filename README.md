@@ -15,18 +15,18 @@ In this SDK is also included some useful libraries and framework that will make 
 ## Docummentation
 You will have the official MQL documentation in the following link for [MQL4](https://docs.mql4.com/) and [MQL5](https://www.mql5.com/en/docs). <br>
 However, while using our framework we changed most of the functions and methods to be able to use them cross-platform, so reach our documenation in order to understand how to se them. <br>
-Click here to access this **[SDK docummenation](docs/home.md)**
+Click here to access this **[SDK docummentation](docs/home.md)**
 
 ## Getting Started
 ### Installing the SDK
 You can install it manually or using our installation app. See below the instructions for both ways: <br>
 
-**AUTOMATIC**: <br>
+**AUTOMATIC**: (not implemented yet) <br>
 1. Download or clone the SDK repository in your computer.
 2. Go to the file `setup.exe` and double click it.
 3. Follow the instructions in-app to select what to install and what to not. You can select your custom Metatrader app or install the built-in platform provided by FTMO.
 4. The app will install the SDK in the FTMO built-in data folder, or in the path provided by you at the installation.
-5. Create a new project from the data folder of he app used.
+5. Create a new project from the data folder of the app used.
 6. In the header of your file, before any other non-comment line, copy and paste the line below:
 
 ```cpp
@@ -63,27 +63,116 @@ The path below are the path for the metatraders provided by FTMO included in the
 `C:\Users\<USER NAME>\AppData\Roaming\MetaQuotes\Terminal\49CDDEAA95A409ED22BD2287BB67CB9C\MQL5`
 
 ## Docummentation
-Access the documentation files in MD format by clicking [here](docs/home.md)
+Access the documentation files in MD format by clicking in the `blue` link of each module name of the table below to check its docummentation.
 
-### Modules
-|   From    | Module Name  | Description                                          |
-| :-------: | :----------: | :--------------------------------------------------- |
-|   `mql`   |  `account`   | Import all account-related data and operations       |
-|   `mql`   |  `terminal`  | Import all terminal-related data and operations      |
-|   `mql`   |   `market`   | Import all market-related data and operations        |
-|   `mql`   |   `trade`    | Import all trade-related data and operations         |
-|   `mql`   | `indicators` | Import all indicators-related data and operations    |
+# Packages & Modules
+The SDK will be divided in a package-modules-classes structure. Where,
+* A `package` will be like a whole framework. A set of modules and classes for an specific task.
+* A `module` can contain 1 or more classes for different sub-tasks.
 
-### Under Development
-|   From    | Module Name  | Description                                          |
-| :-------: | :----------: | :--------------------------------------------------- |
-| `network` |  `sockets`   | Allow working with web sockets.
-| `api` |  `discord`   | Allow working with the discord API.
-| `api` |  `telegram`   | Allow working with the telegram API.
-| `api` | `newsapi`   | Allow working with the newsapi API of news providers.
-`api` | `googlesheets` | Allow working with the google sheets API.
+## Understanding the table
+The table below has all the `packages` and `modules`, and their current status/version.
 
-## TODO -> Before next updates
-- [ ] Finish the documentation of the SDK.
-- [ ] Add the errors handlers to the 'Trade' module.
-- [ ] Finish the `sockets` and `api` module.
+To import them individually you can use:
+```cpp
+#include <MQL-SDK/<Import as column value>
+```
+
+Remember the hierarchy, which means that if you included the whole `mql` package, you do not need to include individually any of its modules. And if you only included one module, example `account` from `mql`, you must included other modules in order to use them.
+
+
+| Package    |             Module              | Import as                            | Description                                                                                    | Last Release      |
+| :--------- | :-----------------------------: | :----------------------------------- | :--------------------------------------------------------------------------------------------- | :---------------- |
+| `MQL`      |                                 | `modules/mql.mqh`                    | Allows you to code any EA in a single language and export it to both languages (MQL4 & MQL5).  | 1.0               |
+| ->         |    [Account](mql/account.md)    | modules/mql/account.mqh              | Handle all the account-related information.                                                    | 1.0               |
+| ->         |   [Terminal](mql/terminal.md)   | modules/mql/terminal.mqh             | Handle all the terminal-related information.                                                   | 1.0               |
+| ->         |     [Market](mql/market.md)     | modules/mql/market.mqh               | Handle all the market-related information                                                      | 1.0               |
+| ->         |      [Trade](mql/trade.md)      | modules/mql/trade.mqh                | Send, Manage, and handle orders and positions                                                  | 1.0               |
+| ->         | [Indicators](mql/indicators.md) | modules/mql/insdicators.mqh          | Handle the indicators                                                                          | 1.0               |
+| ->         |              Files              | modules/mql/files.mqh                | Handle different files types, including .sets, .logs and .dat                                  | Under Development |
+| `Network`  |                                 | `modules/network.mqh`                | Allows you to make network-related operations like web-requests, working with sockets, etc     | 1.0               |
+| ->         |  [Sockets](network/sockets.md)  | modules/network/sockets.mqh          | Handle server and client sockets                                                               | 1.0               |
+| `Terminal` |                                 | `modules/terminal.mqh`               | Simulate human operations like click and keyboard presses from code using DLLs.                | Under Development |
+| ->         |            NewOrder             | modules/terminal/neworder.mqh        | Simulate clicks on the New Order button and windows                                            | Under Development |
+| ->         |            OneClick             | modules/terminal/oneclick.mqh        | Simulate clicks on the One Click Window                                                        | Under Development |
+| ->         |           AutoTrading           | modules/terminal/autotrading.mqh     | Toggle the Auto Trading button in the terminal from code                                       | Under Development |
+| ->         |              Login              | modules/terminal/login.mqh           | Simulate clicks and entries on the Login windows                                               | Under Development |
+| `APIs`     |                                 | `modules/apis.mqh`                   | Allow connection to some of the most famouses APIs                                             | Under Development |
+| ->         |             Discord             | modules/apis/discord.mqh             | Allow sending data to a discord channel through a Discord Webhook                              | Under Development |
+| ->         |            Telegram             | modules/apis/telegram.mqh            | Allow sending data to a telegram channel using a telegram bot and api key                      | Under Development |
+| ->         |             Notion              | modules/apis/notion.mqh              | Allow sending data to a Notion database                                                        | Under Development |
+| ->         |              Coda               | modules/apis/coda.mqh                | Allow sending data to a coda table (a better alternative than Notion)                          | Under Development |
+| ->         |             Sheets              | modules/apis/sheets.mqh              | Allow sending data to a Google Sheet                                                           | Under Development |
+| ->         |              News               | modules/apis/news.mqh                | Allows you to get information about news in the market                                         | Under Development |
+| `Concepts` |                                 | `modules/concepts.mqh`               | Handle some trading concepts to be used in strategies                                          | Under Development |
+| ->         |      CandlesticksPatterns       | modules/concepts/candlespatterns.mqh | Handle candlesticks' patterns                                                                  | Under Development |
+| ->         |          ChartPatterns          | modules/concepts/chartpatterns.mqh   | Handle chart's patterns                                                                        | Under Development |
+| ->         |             SRZones             | modules/concepts/srzones.mqh         | Handle Support and Resistance zones                                                            | Under Development |
+| ->         |              Trend              | modules/concepts/trend.mqh           | Handle market trends in multiple timeframes, includes CHoCH concepts                           | Under Development |
+| ->         |            Liquidity            | modules/concepts/liquidity.mqh       | Handle different liquidity types                                                               | Under Development |
+| ->         |               OBs               | modules/concepts/obs.mqh             | Handle Order Blocks                                                                            | Under Development |
+| ->         |             SDZones             | modules/concepts/sdzones.mqh         | Handle Supply and Demand Zones                                                                 | Under Development |
+| ->         |            Imbalance            | modules/concepts/imb.mqh             | Handle Imbalances and Inneficiencies in price                                                  | Under Development |
+| `Backtest` |                                 | `modules/backtest.mqh`               | Allows you lot of functions that will help you during a backtest                               | Under Development |
+| ->         |             Reports             | modules/backtest/reports.mqh         | Allows you to get detailed reports with images about a backtest                                | Under Development |
+| ->         |           MultiPairs            | modules/backtest/multipairs.mqh      | Allows you to run backtest in multiple pairs at once                                           | Under Development |
+| `Tools`    |                                 | `modules/tools.mqh`                  | Some modules that allows you to do different things                                            | Under Development |
+| ->         |           TradingMath           | modules/tools/tradingmath.mqh        | Some functions for an easy calculation of math related to trading like winrate, lot sizes, etc | Under Development |
+| ->         |             Charts              | modules/tools/charts.mqh             | Functions to work with charts, like closing, opening, save templates, etc                      | Under Development |
+| ->         |              Debug              | modules/tools/debug.mqh              | Better Print()s, and other useful debugging functions                                          | Under Development |
+
+# Repository Structure
+## Branches
+Are 3 branches: `main`, `open`, and `dev`.
+* `Main`: This branch will be up-to-date with the last `release`. It doesn't matter if it is an alpha, beta, or stable release.
+* `Open`: This branch will be up-to-date with the `main` branch and will accept community improvement. All the pull requests will be reviewed, tested, and merged with the main branch.
+* `Dev`: This is the branch I will be using to update the SDK. Do not clone this branch as it contains fatal errors and uncomplete code. After the code get tested, it will be merged with the main branch.
+
+## Releases
+Here will be the updated tested code. It will be divided in `beta` and `stable` releases, where beta does compile and got tested a couple of times, and stable compiles, and has been tested at least 5 times.
+If you will use the code, and not improve it, always download an `stable release` to avoid bugs in your projects.
+
+## Versions
+The release version structure will be `x.yy.zz-<type>`.
+
+### Types
+As explained before, it will be `beta` and `stable`.
+
+### Z
+An increment in Z means a hotfix, the syntax was not affected and just some logic bugs were fixed.
+
+### Y
+An increment in Y could mean improvement of the SDK or a hotfix that change some of the syntax.
+Usually means that a new class, module, or package were added to the SDK, but sometimes means that in order to fix a bug the sintax of the class was changed and you must do some adjustment in your projects.
+
+### X
+An increment in X means that a whole change was made in the SDK. More packages were added and an optimization of the last code made the code incompatible in more than a module and you must update all youir projects in order to use this new version. Will not be frequent.
+
+### Examples
+* Release from v1.2.1 to 1.2.2 - The code syntax is 100% compatible with previews versions, not adjustments in your projects is needed.
+* Release from v1.2.2 to 1.3.0 - One of the modules changed its syntax in some way that you must make a few adjustments in your projects.
+* Release from v1.3.0 to 2.0.0 - The whole SDK version is mostly incompatible with the previews version. You may keep using the last version or make the jump, but you must do lot of adjustments in your code to update them to the new version.
+
+## Changelogs
+You can chack the changelogs by clicking [here](changelogs/index.md).
+
+# FAQs
+### **How compatible is it?**
+All the packages and modules on an official `release` and `main branch` will be compatible to use in both platforms under the same syntax.
+
+### **A built-in MQL4 function is not in the SDK**
+This can be because that function is 100% compatible in MQL5 by default and do not need to be included in the SDK. That way we save disk and memory.
+
+### **My favorite indicator is not compatible**
+We are updating the `indicator` moddule of the `mql` package every week with more indicators and even indicators that are not available in Metatrader by default.
+
+### **Can I code my indicators here?**
+Yes, you can, however, the SDK is mostly designed for Expert Advisors and Scripts.
+
+### **Can I improve the SDK?**
+Of course, this is an open-source SDK and you can contribute in several ways. Here's some examples:
+* **By reporting bugs**: This will help us to fix them on future updates.
+* **By suggesting**: If you have an idea of a module, package, or feature that you want in the SDK, leave it in the Issues tab and we will implement it.
+* **By suggesting libraries**: If you know or even have a library that want to incorporate in the SDK, leave it in the Issues section or make a pull request on the `Open` branch and I will check it out.
+* **By improving the actual code**: Maybe optimize it, or adding new functions or classes to actual modules will help.
+* **By sharing it**: Sharing the repository is forum will help others developers to reach it, and more developers means more improvements to the project.

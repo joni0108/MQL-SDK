@@ -1,5 +1,5 @@
 # Terminal Module
-This is a sub-module of the MQL module. It will allow you to import all terminal-related data and operations.
+This is a module of the MQL package. It will allow you to import all terminal-related data and operations.
 
 ## Installation
 If you didn't imported all the SDK or the MQL module, you can import this module using:

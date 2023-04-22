@@ -1,5 +1,5 @@
 # Socket Module
-This is a sub-module of the Network package that allows the creation of server sockets, and the connection to server sockets in mql4 and mql5.
+This is a module of the Network package that allows the creation of server sockets, and the connection to server sockets in mql4 and mql5.
 This module has 2 classes inside, `ServerSocket` for creating the socket, and `ClientSocket` for connecting to a socket.
 
 ## Installation

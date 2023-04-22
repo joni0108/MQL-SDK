@@ -1,27 +1,15 @@
-# CTrading class
+# Trading Module
+This is a module of the MQL package. It will allow you to send, modify, and close orders and positions. As well get information about trades in the main or history pool.
+
+## Installation
+If you didn't imported all the SDK or the MQL module, you can import this module using:
+```cpp
+#include <MQL-SDK/modules/mql/trade.mqh>
+```
+
+# Class CTrading
 This class will handle all the trading operations you need to make <br>
 
-## Usage
-```cpp
-#include <Just_MQL_Framework/main.mqh> //Include the framework
-
-//Creating a class object or...
-CTrading trading;
-
-//Use the predefined class name 'Trading'
-int OnInit()
-{
-    //Setup the base parameters
-    Trading.SetMagicNumber(1234);
-    Trading.SetMaxDeviation(-1);
-    
-    //Make a market buy with 0.34 lots in the Bitcoin, no stop loss or TP
-    Trading.Buy(0.34, "BTCUSD");
-
-    //Save the ticket
-    int myTicket = (int)Trading.ResultTicket();
-}
-```
 ## Class Methods
 ```cpp
 //Class methods
@@ -118,6 +106,27 @@ int OnInit()
 - `R` - Return the profit in ratio
 - `%` - Return the profit in percentage
 
+## Example
+```cpp
+#include <MQL-SDK/modules/mql/trade.mqh> //Include the module
+
+//Creating a class object or...
+CTrading trading;
+
+//Use the predefined class name 'Trading'
+int OnInit()
+{
+    //Setup the base parameters
+    Trading.SetMagicNumber(1234);
+    Trading.SetMaxDeviation(-1);
+    
+    //Make a market buy with 0.34 lots in the Bitcoin, no stop loss or TP
+    Trading.Buy(0.34, "BTCUSD");
+
+    //Save the ticket
+    int myTicket = (int)Trading.ResultTicket();
+}
+```
 
 ## Notes
 Make sure to use `Trading.Select(<parameters>);` prior to getting old (or unregistered) trades information like you do in MQL4

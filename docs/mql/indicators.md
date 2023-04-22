@@ -1,18 +1,25 @@
-# CIndicators class
-This class will handle the indicators. <br>
+# Indicators Module
+This is a module of the MQL package. It will allow you to get indicators values.
 
-## Usage
+## Installation
+If you didn't imported all the SDK or the MQL module, you can import this module using:
 ```cpp
-#include <Just_MQL_Framework/main.mqh> //Include the framework
-
-//Use the predefined class name 'Indicator'
-double atr_value_5_before = Indicator.i_ATR("BTCUSD",PERIOD_M1,14,5);
-
-//Print the balance
-Print("The balance is: " + DoubleToString(atr_value_5_before,2));
+#include <MQL-SDK/modules/mql/indicators.mqh>
 ```
 
-## Class Methods
+# Class CIndicators
+This class will handle the indicators. <br>
+
+## Methods Overview
+```cpp
+double i_MA(<parameters>); //Get the value of the moving average indicator.
+double i_ATR(<parameters>); //Get the value of the ATR indicator.
+double i_MACD(<parameters>); //Get the value of the MACD indicator.
+double i_RSI(<parameters>); //Get the value of the RSI indicator.
+double i_SAR(<parameters>); //Get the value of the SAR indicator.
+```
+
+## Detailed Class Methods
 ```cpp
 //Class methods
    double            i_MA(
@@ -60,5 +67,15 @@ Print("The balance is: " + DoubleToString(atr_value_5_before,2));
    ); //Parabolic Stop and Reverse
 ```
 
+## Example
+```cpp
+#include <MQL-SDK/modules/mql/indicators> //Include the module
+
+//Use the predefined class name 'Indicator'
+double atr_value_5_before = Indicator.i_ATR("BTCUSD",PERIOD_M1,14,5);
+
+//Print the balance
+Print("The balance is: " + DoubleToString(atr_value_5_before,2));
+```
 ## Notes
 More indicators will be added soon!

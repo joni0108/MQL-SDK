@@ -1,5 +1,5 @@
 # Market Module
-This is a sub-module of the MQL module. It will allow you to import all market & symbols related data.
+This is a module of the MQL package. It will allow you to import all market & symbols related data.
 
 ## Installation
 If you didn't imported all the SDK or the MQL module, you can import this module using:
