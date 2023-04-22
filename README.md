@@ -1,4 +1,10 @@
 # MQL-SDK
+![](https://img.shields.io/github/license/trollpro0108-code/MQL-SDK)
+![](https://img.shields.io/github/v/release/trollpro0108-code/MQL-SDK?include_prereleases&label=last%20release)
+![](https://img.shields.io/github/repo-size/trollpro0108-code/MQL-SDK)
+![](https://img.shields.io/badge/Lnaguage-MQL4%20%26%20MQL5-green)
+![](https://img.shields.io/github/issues-raw/trollpro0108-code/MQL-SDK)
+
 **What is MQL-SDK?**
 This is an open-source framework created with the goal of make a whole complete development kit for your Metatrader projects.
 
@@ -84,14 +90,14 @@ Remember the hierarchy, which means that if you included the whole `mql` package
 | Package    |             Module              | Import as                            | Description                                                                                    | Last Release      |
 | :--------- | :-----------------------------: | :----------------------------------- | :--------------------------------------------------------------------------------------------- | :---------------- |
 | `MQL`      |                                 | `modules/mql.mqh`                    | Allows you to code any EA in a single language and export it to both languages (MQL4 & MQL5).  | 1.0               |
-| ->         |    [Account](mql/account.md)    | modules/mql/account.mqh              | Handle all the account-related information.                                                    | 1.0               |
-| ->         |   [Terminal](mql/terminal.md)   | modules/mql/terminal.mqh             | Handle all the terminal-related information.                                                   | 1.0               |
-| ->         |     [Market](mql/market.md)     | modules/mql/market.mqh               | Handle all the market-related information                                                      | 1.0               |
-| ->         |      [Trade](mql/trade.md)      | modules/mql/trade.mqh                | Send, Manage, and handle orders and positions                                                  | 1.0               |
-| ->         | [Indicators](mql/indicators.md) | modules/mql/insdicators.mqh          | Handle the indicators                                                                          | 1.0               |
+| ->         |    [Account](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/mql/account.md)    | modules/mql/account.mqh              | Handle all the account-related information.                                                    | 1.0               |
+| ->         |   [Terminal](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/mql/terminal.md)   | modules/mql/terminal.mqh             | Handle all the terminal-related information.                                                   | 1.0               |
+| ->         |     [Market](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/mql/market.md)     | modules/mql/market.mqh               | Handle all the market-related information                                                      | 1.0               |
+| ->         |      [Trade](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/mql/trade.md)      | modules/mql/trade.mqh                | Send, Manage, and handle orders and positions                                                  | 1.0               |
+| ->         | [Indicators](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/mql/indicators.md) | modules/mql/insdicators.mqh          | Handle the indicators                                                                          | 1.0               |
 | ->         |              Files              | modules/mql/files.mqh                | Handle different files types, including .sets, .logs and .dat                                  | Under Development |
 | `Network`  |                                 | `modules/network.mqh`                | Allows you to make network-related operations like web-requests, working with sockets, etc     | 1.0               |
-| ->         |  [Sockets](network/sockets.md)  | modules/network/sockets.mqh          | Handle server and client sockets                                                               | 1.0               |
+| ->         |  [Sockets](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/network/sockets.md)  | modules/network/sockets.mqh          | Handle server and client sockets                                                               | 1.0               |
 | `Terminal` |                                 | `modules/terminal.mqh`               | Simulate human operations like click and keyboard presses from code using DLLs.                | Under Development |
 | ->         |            NewOrder             | modules/terminal/neworder.mqh        | Simulate clicks on the New Order button and windows                                            | Under Development |
 | ->         |            OneClick             | modules/terminal/oneclick.mqh        | Simulate clicks on the One Click Window                                                        | Under Development |

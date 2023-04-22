@@ -1,4 +1,9 @@
 # Changelog
+# `MQL-SDK version 1.1.0`
+*Released in April 30<sup>th</sup>, 2023*
+
+Check the release notes clicking [here](https://github.com/trollpro0108-code/MQL-SDK/releases/tag/v1.1.0-beta)
+
 # `MQL-SDK version 1.0.0`
 *Released in April 30<sup>th</sup>, 2023*
 
