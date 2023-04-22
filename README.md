@@ -14,8 +14,8 @@ In this SDK is also included some useful libraries and framework that will make 
 
 ## Docummentation
 You will have the official MQL documentation in the following link for [MQL4](https://docs.mql4.com/) and [MQL5](https://www.mql5.com/en/docs). <br>
-However, while using our framework we changed most of the functions and methods to be able to use them cross-platform, so reach our documenation in order to understand how to se them. <br>
-Click here to access this **[SDK docummentation](docs/home.md)**
+However, while using our SDK we changed most of the functions and methods to be able to use them cross-platform, so reach our docummentation in order to understand how to se them. <br>
+In the **Modules** section of this ReadMe files you can reach the docummentation for each module by clicking their hyperlink.
 
 ## Getting Started
 ### Installing the SDK
