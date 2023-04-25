@@ -9,3 +9,4 @@ this module is what you need.
 #include "mql/market.mqh"
 #include "mql/trade.mqh"
 #include "mql/indicators.mqh"
+#include "mql/files.mqh"

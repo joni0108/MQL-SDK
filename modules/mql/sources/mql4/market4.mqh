@@ -1,4 +1,4 @@
-#include "../common/errorsHandler.mqh"
+#include "../../../internal/errorsHandler.mqh"
 #include "../common/enumerations.mqh"
 
 class CMarket
@@ -60,13 +60,13 @@ int CMarket::InfoInteger(string symbol, ENUM_SYMBOL info)
     switch (info)
     {
     case DIGITS:
-        return SymbolInfoInteger(symbol, SYMBOL_DIGITS);
+        return (int)SymbolInfoInteger(symbol, SYMBOL_DIGITS);
     case SPREAD:
-        return SymbolInfoInteger(symbol, SYMBOL_SPREAD);
+        return (int)SymbolInfoInteger(symbol, SYMBOL_SPREAD);
     case STOP_LEVEL:
-        return SymbolInfoInteger(symbol, SYMBOL_TRADE_STOPS_LEVEL);
+        return (int)SymbolInfoInteger(symbol, SYMBOL_TRADE_STOPS_LEVEL);
     case FREEZE_LEVEL:
-        return SymbolInfoInteger(symbol, SYMBOL_TRADE_FREEZE_LEVEL);
+        return (int)SymbolInfoInteger(symbol, SYMBOL_TRADE_FREEZE_LEVEL);
     }
 
     return -1;
@@ -311,7 +311,7 @@ int CMarket::GetVolume(string symbol, ENUM_TIMEFRAMES timeframe, int shift)
         return -1;
     }
 
-    return iVolume(symbol, timeframe, shift);
+    return (int)iVolume(symbol, timeframe, shift);
 }
 
 int CMarket::GetVolume(int shift)
