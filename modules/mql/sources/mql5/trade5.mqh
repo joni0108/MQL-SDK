@@ -1,4 +1,4 @@
-#include "../common/errorsHandler.mqh"
+#include "../../../internal/errorsHandler.mqh"
 #include "../common/enumerations.mqh"
 #include "trade5_dep.mqh"
 

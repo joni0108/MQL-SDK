@@ -1,6 +1,6 @@
 // Accounts Class - provides access to account information
 #include "enumerations.mqh"
-#include "errorsHandler.mqh"
+#include "../../../internal/errorsHandler.mqh"
 
 class CAccount
 {
@@ -46,13 +46,13 @@ int CAccount::InfoInteger(ENUM_ACCOUNT _info)
     switch(_info)
     {
         case 0:
-            return AccountInfoInteger(ACCOUNT_LOGIN);
+            return (int)AccountInfoInteger(ACCOUNT_LOGIN);
         case 1:
-            return AccountInfoInteger(ACCOUNT_TRADE_MODE);
+            return (int)AccountInfoInteger(ACCOUNT_TRADE_MODE);
         case 2:
-            return AccountInfoInteger(ACCOUNT_LEVERAGE);
+            return (int)AccountInfoInteger(ACCOUNT_LEVERAGE);
         case 3:
-            return AccountInfoInteger(ACCOUNT_LIMIT_ORDERS);
+            return (int)AccountInfoInteger(ACCOUNT_LIMIT_ORDERS);
     }
 
     return -1;

@@ -1,4 +1,4 @@
-#include "../common/errorsHandler.mqh"
+#include "../../../internal/errorsHandler.mqh"
 #include "../common/enumerations.mqh"
 
 /*
@@ -178,11 +178,13 @@ void CTrading::_FreeSelected(void)
 //+------------------------------------------------------------------+
 bool CTrading::Select(int index,int selectMethod = BY_INDEX, int pool = POOL_MAIN)
   {
+   bool res = false;
+  
    if(selectMethod == BY_INDEX)
      {
       if(pool == POOL_MAIN)
         {
-         bool res = OrderSelect(index,SELECT_BY_POS,MODE_TRADES);
+         res = OrderSelect(index,SELECT_BY_POS,MODE_TRADES);
 
          if(!res)
             return false;

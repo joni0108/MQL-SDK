@@ -1,5 +1,5 @@
 #include "enumerations.mqh"
-#include "errorsHandler.mqh"
+#include "../../../internal/errorsHandler.mqh"
 
 class CTerminal
 {
