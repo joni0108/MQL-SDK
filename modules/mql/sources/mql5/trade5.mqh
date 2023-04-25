@@ -1,6 +1,7 @@
 #include "../../../internal/errorsHandler.mqh"
 #include "../common/enumerations.mqh"
 #include "trade5_dep.mqh"
+#include <trade/Trade.mqh>
 
 /*
    SELECT METHODS:
