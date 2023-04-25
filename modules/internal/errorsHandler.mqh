@@ -4,7 +4,10 @@ enum ENUM_SDK_ERRORS
     SDK_ERROR_NONE = 0,
     SDK_ERROR_INVALID_PARAMETER = 1,
     SDK_ERROR_ENUM_OUT_OF_RANGE = 2,
-    SDK_ERROR_UNINITIALIZED_CLASS_MEMBER = 3
+    SDK_ERROR_UNINITIALIZED_CLASS_MEMBER = 3,
+    SDK_ERROR_FILE_OPENING_FAILED = 4,
+    SDK_ERROR_EMPTY_ARRAY = 5,
+    SDK_ERROR_DIVISION_BY_ZERO = 6
 };
 
 class CErrorsHandler
@@ -57,6 +60,12 @@ string CErrorsHandler::GetErrorMessage()
             return "Enum out of range";
         case SDK_ERROR_UNINITIALIZED_CLASS_MEMBER:
             return "Uninitialized class member";
+        case SDK_ERROR_FILE_OPENING_FAILED:
+            return "It was an error while trying to open the file";
+        case SDK_ERROR_EMPTY_ARRAY:
+            return "Empty array passed as parameter or as result";
+        case SDK_ERROR_DIVISION_BY_ZERO:
+            return "Division by zero";
         default:
             return "Unknown error";
     }
