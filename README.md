@@ -27,13 +27,16 @@ In the **Modules** section of this ReadMe files you can reach the docummentation
 ### Installing the SDK
 You can install it manually or using our installation app. See below the instructions for both ways: <br>
 
-**AUTOMATIC**: (not implemented yet) <br>
+**AUTOMATIC**: (already implemented) <br>
 1. Download or clone the SDK repository in your computer.
 2. Go to the file `setup.exe` and double click it.
-3. Follow the instructions in-app to select what to install and what to not. You can select your custom Metatrader app or install the built-in platform provided by FTMO.
-4. The app will install the SDK in the FTMO built-in data folder, or in the path provided by you at the installation.
-5. Create a new project from the data folder of the app used.
-6. In the header of your file, before any other non-comment line, copy and paste the line below:
+3. Follow the instructions in-app to select what to install and what to not.
+4. Click on the "Find Path" button and navigate to your MetaEditor data folder.
+5. Once inside the MQL4 or MQL5 subfolder, click save.
+6. Once all the paths are set, click on the "Install" button.
+7. The app will copy all the libraries and required dlls to their folders for the platforms selected.
+8. Create a new expert advisor project in your MetaEditor or use one of your already created projects.
+9. In the header of your file, before any other non-comment line, copy and paste the line below:
 
 ```cpp
 #include <MQL-SDK/modules/all.mql>
@@ -59,14 +62,7 @@ You can also include specific modules instead of the whole framework, for doing 
 Notes: <br>
 You can also include specific modules instead of the whole framework, for doing so, go to the module documentation to see the including rules.
 
-### Default Paths
-The path below are the path for the metatraders provided by FTMO included in the SDK, if you installed your own metatrader, find the path by opening the metatrader, click in Files->Open Data Folder.
-
-**MT4 DATA PATH**:
-`C:\Users\<USER NAME>\AppData\Roaming\MetaQuotes\Terminal\2C68BEE3A904BDCEE3EEF5A5A77EC162\MQL4`
-
-**MT5 DATA PATH**:
-`C:\Users\<USER NAME>\AppData\Roaming\MetaQuotes\Terminal\49CDDEAA95A409ED22BD2287BB67CB9C\MQL5`
+Do not forget to check the docummentation of each library by clicking on the module name in the table below.
 
 ## Docummentation
 Access the documentation files in MD format by clicking in the `blue` link of each module name of the table below to check its docummentation.
@@ -102,6 +98,7 @@ Remember the hierarchy, which means that if you included the whole `mql` package
 | ->         |    [NewOrder](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/terminal/neworder.md)    | modules/terminal/neworder.mqh        | Simulate clicks on the New Order button and windows                                            | 1.0               |
 | ->         |    [OneClick](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/terminal/oneclick.md)    | modules/terminal/oneclick.mqh        | Simulate clicks on the One Click Window                                                        | 1.0               |
 | ->         | [AutoTrading](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/terminal/autotrading.md) | modules/terminal/autotrading.mqh     | Toggle the Auto Trading button in the terminal from code                                       | 1.0               |
+| ->         |      [KeyMap](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/terminal/keymap.md)      | modules/terminal/keymap.mqh          | Detect and return as a string a key pressed by the user                                        | 1.0               |
 | ->         |                                               Login                                                | modules/terminal/login.mqh           | Simulate clicks and entries on the Login windows                                               | Under Development |
 | `APIs`     |                                                                                                    | `modules/apis.mqh`                   | Allow connection to some of the most famouses APIs                                             |                   |
 | ->         |                                              Discord                                               | modules/apis/discord.mqh             | Allow sending data to a discord channel through a Discord Webhook                              | Under Development |
@@ -124,7 +121,7 @@ Remember the hierarchy, which means that if you included the whole `mql` package
 | ->         |                                             MultiPairs                                             | modules/backtest/multipairs.mqh      | Allows you to run backtest in multiple pairs at once                                           | Under Development |
 | `Tools`    |                                                                                                    | `modules/tools.mqh`                  | Some modules that allows you to do different things                                            |                   |
 | ->         |  [TradingMath](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/tools/tradingmath.md)   | modules/tools/tradingmath.mqh        | Some functions for an easy calculation of math related to trading like winrate, lot sizes, etc | 1.0               |
-| ->         |                                               Charts                                               | modules/tools/charts.mqh             | Functions to work with charts, like closing, opening, save templates, etc                      | Under Development |
+| ->         |       [Charts](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/tools/charts.md)        | modules/tools/charts.mqh             | Functions to work with charts, like closing, opening, save templates, etc                      | 1.0               |
 | ->         |                                               Debug                                                | modules/tools/debug.mqh              | Better Print()s, and other useful debugging functions                                          | Under Development |
 
 # Repository Structure
