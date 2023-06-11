@@ -1,4 +1,46 @@
 # Changelog
+# `MQL-SDK version 1.3.0`
+*Released in June 11<sup>th</sup>, 2023*
+
+## **Issues Solved in this release**
+* No bugs found or reported. <br><br>
+
+## **New Enhancements**
+### **Terminal Package Extended**
+* **Automatic Install** - Added the automatic SDK Libraries installer and its source code. Use it by clicking on the `setup.exe` file in the root folder of the SDK.
+
+## Notes
+* If you find any bug while using the automatic installation, please let me know.
+
+
+# `MQL-SDK version 1.2.0`
+*Released in April 27<sup>th</sup>, 2023*
+
+## **Issues Solved in this release**
+* No bugs found or reported. <br><br>
+
+## **New Enhancements**
+### **Terminal Package Extended**
+We have extended the Terminal package with a new module that helps you to detect what key was pressed in the terminal. This module is very useful to create hotkeys.
+
+
+### **Tools Package Extended**
+We have extended the Tools package with a new module (Charts) that add some useful functions and classes to work with charts.
+
+* **CLogo class** - This class allows you to add a logo to the chart very easily.
+* **ChartCloseAll() function** - This function allows you to close charts with some filters.
+* **Debug functions** - This functions allows you to add a debug button to the chart to debug your code events very easily.
+
+### **API Package Added**
+We added a package to communicate with some APIs. At this moment it only contains 3 modules.
+
+* **Discord module** - This module allows you to send embbeded messages to a Discord channel.
+* **Telegram module** - This module allows you to send messages to a Telegram channel.
+* **Sheets module** - This module allows you to send data to a Google Sheet.
+
+## Notes
+* At this moment the manual installation method is still the only available. The automatic installation will be incorporated in further releases.
+
 # `MQL-SDK version 1.1.0`
 *Released in April 25<sup>th</sup>, 2023*
 
