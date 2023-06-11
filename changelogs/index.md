@@ -1,4 +1,18 @@
 # Changelog
+# `MQL-SDK version 1.3.0`
+*Released in June 11<sup>th</sup>, 2023*
+
+## **Issues Solved in this release**
+* No bugs found or reported. <br><br>
+
+## **New Enhancements**
+### **Terminal Package Extended**
+* **Automatic Install** - Added the automatic SDK Libraries installer and its source code. Use it by clicking on the `setup.exe` file in the root folder of the SDK.
+
+## Notes
+* If you find any bug while using the automatic installation, please let me know.
+
+
 # `MQL-SDK version 1.2.0`
 *Released in April 27<sup>th</sup>, 2023*
 
