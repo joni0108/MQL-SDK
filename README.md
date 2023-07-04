@@ -122,6 +122,7 @@ Remember the hierarchy, which means that if you included the whole `mql` package
 | `Tools`    |                                                                                                    | `modules/tools.mqh`                  | Some modules that allows you to do different things                                            |                   |
 | ->         |  [TradingMath](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/tools/tradingmath.md)   | modules/tools/tradingmath.mqh        | Some functions for an easy calculation of math related to trading like winrate, lot sizes, etc | 1.0               |
 | ->         |       [Charts](https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/tools/charts.md)        | modules/tools/charts.mqh             | Functions to work with charts, like closing, opening, save templates, etc                      | 1.0               |
+| -> | Time Input(https://github.com/trollpro0108-code/MQL-SDK/tree/main/docs/tools/timeInput.md) | modules/tools/timeinput.mqh | Allows you to get a time input from the user | 1.0 |
 | ->         |                                               Debug                                                | modules/tools/debug.mqh              | Better Print()s, and other useful debugging functions                                          | Under Development |
 
 # Repository Structure
