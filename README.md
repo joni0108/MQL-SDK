@@ -39,7 +39,7 @@ You can install it manually or using our installation app. See below the instruc
 9. In the header of your file, before any other non-comment line, copy and paste the line below:
 
 ```cpp
-#include <MQL-SDK/modules/all.mql>
+#include <SDK-MQL/all.mqh>
 ```
 
 Notes: <br>
@@ -56,7 +56,7 @@ You can also include specific modules instead of the whole framework, for doing 
 8. Create a new project and include the SDK into your app using:
 
 ```cpp
-#include <MQL-SDK/modules/all.mql>
+#include <SDK-MQL/all.mqh>
 ```
 
 Notes: <br>
@@ -77,7 +77,7 @@ The table below has all the `packages` and `modules`, and their current status/v
 
 To import them individually you can use:
 ```cpp
-#include <MQL-SDK/<Import as column value>
+#include <SDK-MQL/<Import as column value>
 ```
 
 Remember the hierarchy, which means that if you included the whole `mql` package, you do not need to include individually any of its modules. And if you only included one module, example `account` from `mql`, you must included other modules in order to use them.
