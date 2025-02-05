@@ -4,7 +4,7 @@ This is a module of the MQL package. It will allow you to import all account-rel
 ## Installation
 If you didn't imported all the SDK or the MQL module, you can import this module using:
 ```cpp
-#include <MQL-SDK/modules/mql/account.mqh>
+#include <SDK-MQL/mql/account.mqh>
 ```
 
 # Class CAccount

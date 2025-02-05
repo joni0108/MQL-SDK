@@ -1,4 +1,18 @@
 # Changelog
+# `MQL-SDK version 1.3.1`
+*Released in February 4<sup>th</sup>, 2025*
+
+## **Issues Solved in this release**
+- **Fixed Errors presented on current Metatrader 5 version** - The file `WinUser32.mqh` were moved to `WinAPI/winuser.mqh`, and the constants were redefined.
+- **Removed automatic installator** - As the anti-virus was giving false-positive on it, now it got move to its own branch.
+- **Fixed documentation** - Some import routes were wrong on the documentation, now they were fixed.
+
+## **New Enhancements**
+* No enhancements on this version
+
+## Notes
+* This SDK will be closed, so this is the last update (except for bugfix updates) that I do to this project, instead, I will be focused on MQL5 & CTrader, making a new repository and extend the features I had in stand by, and add new features. However, if there's any bug, please, open an issue and I'll fix it asap.
+
 # `MQL-SDK version 1.3.0`
 *Released in June 11<sup>th</sup>, 2023*
 

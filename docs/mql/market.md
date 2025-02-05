@@ -4,7 +4,7 @@ This is a module of the MQL package. It will allow you to import all market & sy
 ## Installation
 If you didn't imported all the SDK or the MQL module, you can import this module using:
 ```cpp
-#include <MQL-SDK/modules/mql/market.mqh>
+#include <SDK-MQL/mql/market.mqh>
 ```
 
 # Class CMarket

@@ -4,7 +4,7 @@ This is class from the files module of the MQL package. It will allow you to han
 ## Installation
 If you didn't imported all the SDK or the MQL module, you can import this module using:
 ```cpp
-#include <MQL-SDK/modules/mql/files.mqh>
+#include <SDK-MQL/mql/files.mqh>
 ```
 
 ## Methods
@@ -30,7 +30,7 @@ enum LOG_TYPE
 
 ## Example
 ```cpp
-#include <MQL-SDK/modules/mql/files.mqh>    //Including the module
+#include <SDK-MQL/mql/files.mqh>    //Including the module
 
 //Creating a class object
 CLogs myFile;

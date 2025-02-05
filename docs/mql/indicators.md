@@ -4,7 +4,7 @@ This is a module of the MQL package. It will allow you to get indicators values.
 ## Installation
 If you didn't imported all the SDK or the MQL module, you can import this module using:
 ```cpp
-#include <MQL-SDK/modules/mql/indicators.mqh>
+#include <SDK-MQL/mql/indicators.mqh>
 ```
 
 # Class CIndicators
@@ -69,7 +69,7 @@ double i_SAR(<parameters>); //Get the value of the SAR indicator.
 
 ## Example
 ```cpp
-#include <MQL-SDK/modules/mql/indicators> //Include the module
+#include <SDK-MQL/mql/indicators> //Include the module
 
 //Use the predefined class name 'Indicator'
 double atr_value_5_before = Indicator.i_ATR("BTCUSD",PERIOD_M1,14,5);

@@ -5,7 +5,7 @@ This module has 2 classes inside, `ServerSocket` for creating the socket, and `C
 ## Installation
 If you didn't imported all the SDK or the Network module, you can import this module using:
 ```cpp
-#include <MQL-SDK/modules/network/sockets.mqh>
+#include <SDK-MQL/network/sockets.mqh>
 ```
 
 # Class ClientSocket
@@ -21,7 +21,7 @@ string Receive(); //Gets a string message from the server socket.
 ## Example of Usage
 ```cpp
 //Including the module
-#include <MQL-SDK/modules/network/sockets.mqh>
+#include <SDK-MQL/network/sockets.mqh>
 
 //External Variables
 input int port = 8888;

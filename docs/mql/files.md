@@ -9,5 +9,5 @@ It has 3 different classes which wikis can be checked in the following links:
 ## Installation
 If you didn't imported all the SDK or the MQL module, you can import this module using:
 ```cpp
-#include <MQL-SDK/modules/mql/files.mqh>
+#include <SDK-MQL/mql/files.mqh>
 ```

@@ -1,4 +1,4 @@
-#include <MQL-SDK/modules/network/sockets.mqh>
+#include <SDK-MQL/network/sockets.mqh>
 
 #define TIMER_FREQUENCY_MS 1000
 #define NONE "NONE\r\n"
