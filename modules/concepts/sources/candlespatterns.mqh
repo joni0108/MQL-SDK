@@ -84,12 +84,12 @@ BEARISH = 1,
 NEUTRAL = 2,
 };
 
-PATTERNS GetPattern(int index, PATTERNS_TYPE type);                         //Returns the pattern at the specified index and type
+int GetPattern(int index, PATTERNS_TYPE type);                         //Returns the pattern at the specified index and type
 bool IsPattern(PATTERNS pattern, int index);                                //Returns true if the pattern is on the specified index
-BIAS_TYPE GetBias(PATTERNS pattern);                                        //Returns the bias at the specified index
+int GetBias(PATTERNS pattern);                                        //Returns the bias at the specified index
 };
 
-PATTERNS CCandlesPatterns::GetPattern(int index, PATTERNS_TYPE type)
+int CCandlesPatterns::GetPattern(int index, PATTERNS_TYPE type)
 {
     if(index < 0)
     {
@@ -250,7 +250,7 @@ PATTERNS CCandlesPatterns::GetPattern(int index, PATTERNS_TYPE type)
     {
         return NO_PATTERN;
     }
-}
+};
 
 bool CCandlesPatterns::IsPattern(PATTERNS pattern, int index)
 {
@@ -293,9 +293,9 @@ bool CCandlesPatterns::IsPattern(PATTERNS pattern, int index)
         ErrorHandler.SetError(SDK_ERROR_INVALID_PARAMETER);
         return false;
     }
-}
+};
 
-BIAS_TYPE CCandlesPatterns::GetBias(PATTERNS pattern)
+int CCandlesPatterns::GetBias(PATTERNS pattern)
 {
     if(pattern == 0)
         return NEUTRAL;
@@ -303,4 +303,4 @@ BIAS_TYPE CCandlesPatterns::GetBias(PATTERNS pattern)
         return BEARISH;
     else
         return BULLISH;
-}
+};

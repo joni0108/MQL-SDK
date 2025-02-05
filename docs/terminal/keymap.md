@@ -4,7 +4,7 @@ This is a module of the Terminal package that allows to control the terminal int
 ## Installation
 If you didn't imported all the SDK or the Network module, you can import this module using:
 ```cpp
-#include <MQL-SDK/modules/terminal/keymap.mqh>
+#include <SDK-MQL/terminal/keymap.mqh>
 ```
 
 # CKeyPressed Class
@@ -18,7 +18,7 @@ Call it from the `OnChartEvent` function to detect any key pressed by the user.
 ## Example of Usage
 ```cpp
 //Including the module
-#include <MQL-SDK/modules/terminal/keymap.mqh>
+#include <SDK-MQL/terminal/keymap.mqh>
 
 void OnChartEvent(const int id,const long& lparam,const double& dparam,const string& sparam)
   {

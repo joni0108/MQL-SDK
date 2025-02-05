@@ -107,8 +107,6 @@ double CMarket::InfoDouble(string symbol, ENUM_SYMBOL info)
         return SymbolInfoDouble(symbol, SYMBOL_BID);
     case ASK:
         return SymbolInfoDouble(symbol, SYMBOL_ASK);
-    case POINT:
-        return SymbolInfoDouble(symbol, SYMBOL_POINT);
     case TICK_VALUE:
         return SymbolInfoDouble(symbol, SYMBOL_TRADE_TICK_VALUE);
     case TICK_SIZE:

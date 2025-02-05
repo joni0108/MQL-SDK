@@ -4,7 +4,7 @@ This is a module of the Terminal package that allows to control the terminal int
 ## Installation
 If you didn't imported all the SDK or the Network module, you can import this module using:
 ```cpp
-#include <MQL-SDK/modules/terminal/autotrading.mqh>
+#include <SDK-MQL/terminal/autotrading.mqh>
 ```
 
 # SetAutotrading Function
@@ -18,7 +18,7 @@ It will only click on it if the current status is different from the one passed 
 ## Example of Usage
 ```cpp
 //Including the module
-#include <MQL-SDK/modules/terminal/autotrading.mqh>
+#include <SDK-MQL/terminal/autotrading.mqh>
 
 int OnInit()
 {

@@ -4,7 +4,7 @@ This is a module of the MQL package. It will allow you to send, modify, and clos
 ## Installation
 If you didn't imported all the SDK or the MQL module, you can import this module using:
 ```cpp
-#include <MQL-SDK/modules/mql/trade.mqh>
+#include <SDK-MQL/mql/trade.mqh>
 ```
 
 # Class CTrading
@@ -108,7 +108,7 @@ This class will handle all the trading operations you need to make <br>
 
 ## Example
 ```cpp
-#include <MQL-SDK/modules/mql/trade.mqh> //Include the module
+#include <SDK-MQL/mql/trade.mqh> //Include the module
 
 //Creating a class object or...
 CTrading trading;

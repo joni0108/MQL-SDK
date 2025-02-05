@@ -4,7 +4,7 @@ This is a module of the Terminal package that allows to control the terminal int
 ## Installation
 If you didn't imported all the SDK or the Network module, you can import this module using:
 ```cpp
-#include <MQL-SDK/modules/terminal/oneclick.mqh>
+#include <SDK-MQL/terminal/oneclick.mqh>
 ```
 
 # COneClickTradingWindow Class
@@ -20,7 +20,7 @@ It will execute the orders in the symbol of the chart where the EA is running or
 ## Example of Usage
 ```cpp
 //Including the module
-#include <MQL-SDK/modules/terminal/oneclick.mqh>
+#include <SDK-MQL/terminal/oneclick.mqh>
 
 int OnInit()
 {

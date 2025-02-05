@@ -4,7 +4,7 @@ This is a module of the Concepts package. It allows you check if any candle have
 ## Installation
 If you didn't imported all the SDK or the MQL module, you can import this module using:
 ```cpp
-#include <MQL-SDK/modules/concepts/candlespatterns.mqh>
+#include <SDK-MQL/concepts/candlespatterns.mqh>
 ```
 
 # Class CMarket

@@ -28,8 +28,10 @@ In the **Modules** section of this ReadMe files you can reach the docummentation
 You can install it manually or using our installation app. See below the instructions for both ways: <br>
 
 **AUTOMATIC**: (already implemented) <br>
+Notes: Sometimes your anti-virus will detect the installer as a trojan, this is because the installer copy and paste files into your system (the sdk files), and anti-viruses don't like that, click on keep the file in order to use it. You can check the source code and build it yourself, or use the manual installation mode.
+
 1. Download or clone the SDK repository in your computer.
-2. Go to the file `setup.exe` and double click it.
+2. Download the installer (from the `installer` repository branch), and paste the file `setup.exe` into the SDK download root folder, and execute it.
 3. Follow the instructions in-app to select what to install and what to not.
 4. Click on the "Find Path" button and navigate to your MetaEditor data folder.
 5. Once inside the MQL4 or MQL5 subfolder, click save.
@@ -39,7 +41,7 @@ You can install it manually or using our installation app. See below the instruc
 9. In the header of your file, before any other non-comment line, copy and paste the line below:
 
 ```cpp
-#include <MQL-SDK/modules/all.mql>
+#include <SDK-MQL/all.mqh>
 ```
 
 Notes: <br>
@@ -50,13 +52,14 @@ You can also include specific modules instead of the whole framework, for doing 
 2. If you have a Metatrader app already installed in your system, skip to the step **4**.
 3. Install the Metatrader 4 or 5 (or both) provided in the `softwares/metatraders` folder, or use your own.
 4. Go to the Metatrader data folder; if you used the own provided, the path are below in [default paths](#default-paths).
-5. Copy and paste the `MQL-SDK` folder that is inside the `includes` folder into your `includes` folder in the metatrader data folder you navigated to.
-6. Copy and paste the files from the `libraries` folder of the SDK repository into the `libraries` folder of your metatrader data folder.
-7. Copy and paste the files from the `images` folder of the SDK repository into the `images` folder of your metatrader data folder.
-8. Create a new project and include the SDK into your app using:
+5. Create a folder with name `SDK-MQL` inside `includes` folder
+6. Copy and paste the files from the folder `modules` from the downloaded SDK folder into your `includes/SDK-MQL` folder in the metatrader data folder you navigated to
+7. Copy and paste the files from the `libraries` folder of the SDK repository into the `libraries` folder of your metatrader data folder.
+8. Copy and paste the files from the `images` folder of the SDK repository into the `images` folder of your metatrader data folder.
+9. Create a new project and include the SDK into your app using:
 
 ```cpp
-#include <MQL-SDK/modules/all.mql>
+#include <SDK-MQL/all.mqh>
 ```
 
 Notes: <br>
@@ -64,7 +67,7 @@ You can also include specific modules instead of the whole framework, for doing 
 
 Do not forget to check the docummentation of each library by clicking on the module name in the table below.
 
-## Docummentation
+## Documentation
 Access the documentation files in MD format by clicking in the `blue` link of each module name of the table below to check its docummentation.
 
 # Packages & Modules
