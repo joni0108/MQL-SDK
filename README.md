@@ -31,7 +31,7 @@ You can install it manually or using our installation app. See below the instruc
 Notes: Sometimes your anti-virus will detect the installer as a trojan, this is because the installer copy and paste files into your system (the sdk files), and anti-viruses don't like that, click on keep the file in order to use it. You can check the source code and build it yourself, or use the manual installation mode.
 
 1. Download or clone the SDK repository in your computer.
-2. Download the installer (from the `installer` repository branch), and paste the file `setup.exe` into the SDK download root folder, and execute it.
+2. Download the installer files (from the `installer` repository branch), and paste them into the SDK download root folder, and execute it.
 3. Follow the instructions in-app to select what to install and what to not.
 4. Click on the "Find Path" button and navigate to your MetaEditor data folder.
 5. Once inside the MQL4 or MQL5 subfolder, click save.
